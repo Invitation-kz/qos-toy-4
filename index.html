@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>80 жас мерейтой &amp; Сүндет той — Шақыру</title>
-<meta name="description" content="Асқар тау әкеміздің 80 жас мерейтойы мен ұлдарымыздың сүндет тойына қадірлі қонақ болуға шақырамыз.">
+<title>80 жас мерейтой &amp; Ұлы той — Шақыру</title>
+<meta name="description" content="Асқар тау әкеміздің 80 жас мерейтойы мен ұлдарымыздың ұлы тойына қадірлі қонақ болуға шақырамыз.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,6 +48,30 @@
   .section{padding:clamp(56px,12vw,88px) 0;}
   .section + .section{border-top:1px solid var(--line);}
   .center{text-align:center;}
+
+  /* ---------- Photo ---------- */
+  .photo{padding-top:clamp(40px,9vw,64px);padding-bottom:clamp(40px,9vw,64px);}
+  .photo-frame{
+    padding:10px;
+    background:var(--ivory);
+    border:1px solid var(--line);
+    box-shadow:0 18px 40px rgba(32,28,26,0.14);
+    border-radius:2px;
+  }
+  .photo-frame img{
+    width:100%;height:auto;display:block;border-radius:1px;
+  }
+  .photo-caption{
+    margin-top:22px;text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(1.05rem,3.6vw,1.25rem);
+    color:var(--emerald-deep);
+  }
+  .photo-caption span{
+    display:block;font-family:'Manrope',sans-serif;
+    font-size:.78rem;letter-spacing:.03em;color:var(--gold);
+    margin-top:6px;
+  }
 
   /* ---------- Ornament ---------- */
   .ornament{width:56px;height:14px;margin:0 auto 18px;opacity:.85;}
@@ -253,7 +277,7 @@
   </svg>
   <h2>Шақыруды телефоннан қараңыз</h2>
   <p>Бұл бет телефон экранына арналып жасалды. Толық көру үшін сілтемені смартфоныңыздан ашыңыз.</p>
-  <div class="hint">80 жас мерейтой &amp; Сүндет той</div>
+  <div class="hint">80 жас мерейтой &amp; Ұлы той</div>
 </div>
 
 <div id="page-content">
@@ -266,7 +290,7 @@
       <circle cx="28" cy="7" r="1.4" fill="#D6BD91"/>
     </svg>
     <div class="hero-eyebrow">Қос қуанышқа шақыру</div>
-    <h1>80 жас мерейтой<br>&amp; Сүндет той</h1>
+    <h1>80 жас мерейтой<br>&amp; Ұлы той</h1>
     <p class="lead">
       Құрметті ағайын-туыс, бауырлар, құда-жекжат, дос-жарандар, әріптестер мен көршілер —
       ақ дастарханымыздың қадірлі қонағы болуыңызды сұраймыз.
@@ -286,13 +310,25 @@
   </div>
 </section>
 
+<section class="photo" id="photo">
+  <div class="wrap">
+    <div class="photo-frame">
+      <img src="photo1.jpg" alt="Бектай ата, Дәулетбек, Нұрасыл, Ерасыл" loading="lazy">
+    </div>
+    <p class="photo-caption">
+      Бектай ата, Дәулетбек, Нұрасыл, Ерасыл
+      <span>80 жас мерейтой &amp; Ұлы той</span>
+    </p>
+  </div>
+</section>
+
 <section class="section about" id="about">
   <div class="wrap">
     <div class="kicker">Қонақтарға үндеу</div>
     <h2>Қуанышымызды бөлісуге шақырамыз</h2>
     <p>
       Асқар тау әкеміз Бектайдың 80 жасқа толу мерейтойы мен ұлдарымыз Дәулетбектің,
-      Нұрасылдың және Ерасылдың сүндет тойына арналған қос қуанышымызға
+      Нұрасылдың және Ерасылдың ұлы тойына арналған қос қуанышымызға
       сіздерді куә болуға шақырамыз.
     </p>
 
@@ -302,15 +338,15 @@
         <div class="name">Бектай ата — 80 жас</div>
       </div>
       <div class="honoree-card">
-        <div class="role">Сүндет той</div>
+        <div class="role">Ұлы той</div>
         <div class="name">Дәулетбек</div>
       </div>
       <div class="honoree-card">
-        <div class="role">Сүндет той</div>
+        <div class="role">Ұлы той</div>
         <div class="name">Нұрасыл</div>
       </div>
       <div class="honoree-card">
-        <div class="role">Сүндет той</div>
+        <div class="role">Ұлы той</div>
         <div class="name">Ерасыл</div>
       </div>
     </div>
@@ -450,8 +486,8 @@
   (function setCalendarLink(){
     const start = "20261030T130000Z"; // 18:00 Almaty = 13:00 UTC
     const end   = "20261030T180000Z"; // 23:00 Almaty = 18:00 UTC
-    const text = encodeURIComponent("80 жас мерейтой & Сүндет той");
-    const details = encodeURIComponent("Асқар тау әкеміздің 80 жас мерейтойы мен ұлдарымыздың сүндет тойы.");
+    const text = encodeURIComponent("80 жас мерейтой & Ұлы той");
+    const details = encodeURIComponent("Асқар тау әкеміздің 80 жас мерейтойы мен ұлдарымыздың ұлы тойы.");
     const location = encodeURIComponent("Шымкент, Altyn Ballroom, Жібек жолы 130/1");
     const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${start}/${end}&details=${details}&location=${location}`;
     document.getElementById('add-to-calendar').href = url;
