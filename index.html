@@ -1,540 +1,664 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>80 жас мерейтой &amp; Ұлы той — Шақыру</title>
-<meta name="description" content="Асқар тау әкеміздің 80 жас мерейтойы мен ұлдарымыздың ұлы тойына қадірлі қонақ болуға шақырамыз.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Бектай 80 жас және Дәулетбек, Нұрасыл, Ерасыл ұл тойына шақыру!">
+    <meta property="og:description" content="30.10.2026">
+    <meta property="og:image" content="" >
+
+
+<link rel="stylesheet"  href="css.css">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бектай 80 жас және Дәулетбек, Нұрасыл, Ерасыл ұл тойына шақыру!</title> 
+
+
+
 <style>
-  :root{
-    --ivory:#F3EDE3;
-    --ivory-deep:#E7DDCB;
-    --emerald:#690F19;
-    --emerald-deep:#201C1A;
-    --gold:#BC9A57;
-    --gold-soft:#D6BD91;
-    --ink:#201C1A;
-    --line:rgba(32,28,26,0.16);
-    --maxw:760px;
-  }
+    
+@media screen and (max-width: 1280px) {div.contentblock {width: 1200px;} } 
+@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+@media screen and (max-width: 992px) { div.contentblock {width: 970px;} } 
 
-  *{box-sizing:border-box;-webkit-text-size-adjust:100%;}
-  html{scroll-behavior:smooth;}
-  html,body{overflow-x:hidden;width:100%;}
-  body{
-    margin:0;
-    background:var(--ivory);
-    color:var(--ink);
-    font-family:'Manrope',sans-serif;
-    line-height:1.6;
-    font-size:16px;
-  }
-  h1,h2,h3{
-    font-family:'Cormorant Garamond',serif;
-    color:var(--emerald-deep);
-    margin:0 0 .4em;
-    font-weight:600;
-    word-wrap:break-word;
-  }
-  a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{
-    max-width:var(--maxw);margin:0 auto;
-    padding:0 max(20px, env(safe-area-inset-right)) 0 max(20px, env(safe-area-inset-left));
-  }
-  .section{padding:clamp(56px,12vw,88px) 0;}
-  .section + .section{border-top:1px solid var(--line);}
-  .center{text-align:center;}
 
-  /* ---------- Photo ---------- */
-  .photo{padding-top:clamp(40px,9vw,64px);padding-bottom:clamp(40px,9vw,64px);}
-  .photo-frame{
-    padding:10px;
-    background:var(--ivory);
-    border:1px solid var(--line);
-    box-shadow:0 18px 40px rgba(32,28,26,0.14);
-    border-radius:2px;
-  }
-  .photo-frame img{
-    width:100%;height:auto;display:block;border-radius:1px;
-  }
-  .photo-caption{
-    margin-top:22px;text-align:center;
-    font-family:'Cormorant Garamond',serif;
-    font-size:clamp(1.05rem,3.6vw,1.25rem);
-    color:var(--emerald-deep);
-  }
-  .photo-caption span{
-    display:block;font-family:'Manrope',sans-serif;
-    font-size:.78rem;letter-spacing:.03em;color:var(--gold);
-    margin-top:6px;
-  }
+.element-animation{ 
+    top: 0px; 
+    opacity: 0; 
+    position: relative; 
+} 
+.element-animation.element-show{ 
+position: relative; 
+top: 20px; 
+opacity: 1; 
+transition-duration: 1.4s; 
+}
 
-  /* ---------- Ornament ---------- */
-  .ornament{width:56px;height:14px;margin:0 auto 18px;opacity:.85;}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    background:
-      radial-gradient(120% 90% at 50% -10%, rgba(188,154,87,0.22), transparent 60%),
-      linear-gradient(180deg, var(--emerald-deep), var(--emerald) 65%);
-    color:var(--ivory);
-    padding:max(64px, env(safe-area-inset-top) + 48px) 0 clamp(64px,12vw,100px);
-    text-align:center;
-  }
-  .hero-eyebrow{
-    font-size:clamp(.74rem,2.2vw,.82rem);letter-spacing:.06em;color:var(--gold-soft);margin-bottom:18px;
-  }
-  .hero h1{
-    color:var(--ivory);
-    font-size:clamp(2rem,9vw,3.6rem);
-    line-height:1.14;
-    margin-bottom:20px;
-  }
-  .hero p.lead{
-    max-width:520px;margin:0 auto 36px;
-    color:rgba(243,237,227,0.86);
-    font-size:clamp(.92rem,3.2vw,1.02rem);
-  }
-  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
-  .btn{
-    display:inline-block;padding:13px 26px;border-radius:2px;
-    font-size:.92rem;font-weight:600;text-decoration:none;
-    border:1px solid transparent;cursor:pointer;
-    transition:transform .15s ease, opacity .15s ease;
-    white-space:nowrap;
-  }
-  .btn:active{transform:translateY(1px);}
-  .btn-gold{background:var(--gold);color:var(--emerald-deep);}
-  .btn-gold:hover{opacity:.9;}
-  .btn-outline{background:transparent;color:var(--ivory);border-color:rgba(243,237,227,0.5);}
-  .btn-outline:hover{border-color:var(--ivory);}
 
-  /* ---------- Countdown ---------- */
-  .countdown{
-    display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:36px 0 8px;
-  }
-  .countdown div{
-    background:rgba(243,237,227,0.08);
-    border:1px solid rgba(243,237,227,0.22);
-    border-radius:3px;
-    min-width:64px;flex:0 1 68px;padding:12px 6px;
-    text-align:center;
-  }
-  .countdown .num{
-    font-family:'Cormorant Garamond',serif;
-    font-size:clamp(1.4rem,5.5vw,1.9rem);font-weight:600;color:var(--gold-soft);display:block;
-  }
-  .countdown .label{font-size:.72rem;color:rgba(243,237,227,0.75);}
 
-  /* ---------- About ---------- */
-  .kicker{
-    font-size:.8rem;color:var(--gold);letter-spacing:.03em;margin-bottom:10px;
-  }
-  .about p{max-width:600px;font-size:clamp(.94rem,3.4vw,1.02rem);color:#3a352c;}
-  .honorees{
-    margin-top:32px;
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));
-    gap:12px;
-  }
-  .honoree-card{
-    border:1px solid var(--line);border-radius:3px;padding:18px 14px;
-    background:var(--ivory-deep);
-  }
-  .honoree-card .role{font-size:.74rem;color:var(--gold);margin-bottom:6px;}
-  .honoree-card .name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--emerald-deep);word-wrap:break-word;}
 
-  /* ---------- Date card + calendar ---------- */
-  .date-card{
-    display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start;margin-top:32px;
-  }
-  .date-info{flex:1;min-width:200px;}
-  .date-info .big-date{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,7vw,2.4rem);color:var(--emerald-deep);}
-  .date-info .time{color:#5a5344;margin-top:6px;}
-  .cal{
-    border:1px solid var(--line);border-radius:3px;overflow:hidden;
-    flex:1 1 240px;min-width:0;max-width:320px;background:#fff;
-  }
-  .cal-head{
-    background:var(--emerald);color:var(--ivory);
-    text-align:center;padding:10px;font-size:.9rem;letter-spacing:.03em;
-  }
-  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);}
-  .cal-grid span{
-    text-align:center;padding:8px 0;font-size:clamp(.68rem,3vw,.82rem);border-bottom:1px solid var(--line);
-    border-right:1px solid var(--line);
-  }
-  .cal-grid span:nth-child(7n){border-right:none;}
-  .cal-grid .dow{background:var(--ivory-deep);font-weight:600;color:var(--emerald);}
-  .cal-grid .blank{background:#fbf9f3;}
-  .cal-grid .active{background:var(--gold);color:var(--emerald-deep);font-weight:700;}
 
-  /* ---------- Location ---------- */
-  .location-card{margin-top:28px;}
-  .venue-name{font-size:clamp(1.3rem,5vw,1.6rem);}
-  .venue-meta{color:#5a5344;margin-bottom:22px;font-size:clamp(.86rem,3vw,.95rem);}
-  .map-frame{
-    border:1px solid var(--line);border-radius:3px;overflow:hidden;
-    aspect-ratio:4/3;width:100%;
-  }
-  .map-frame iframe{width:100%;height:100%;border:0;}
-  .loc-links{margin-top:16px;display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem;}
-  .loc-links a{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px;}
 
-  /* ---------- RSVP ---------- */
-  .rsvp-box{
-    background:var(--emerald-deep);color:var(--ivory);
-    border-radius:4px;padding:clamp(24px,7vw,44px) clamp(18px,6vw,32px);margin-top:20px;
-  }
-  .rsvp-box .kicker{color:var(--gold-soft);}
-  .rsvp-box h2{color:var(--ivory);font-size:clamp(1.5rem,6vw,1.9rem);}
-  .hosts{margin:6px 0 28px;color:rgba(243,237,227,0.85);font-size:clamp(.9rem,3.2vw,1rem);}
-  form.rsvp{display:grid;gap:16px;margin-top:8px;}
-  .field{display:flex;flex-direction:column;gap:6px;}
-  .field label{font-size:.85rem;color:rgba(243,237,227,0.8);}
-  .field input,.field textarea{
-    background:rgba(243,237,227,0.07);
-    border:1px solid rgba(243,237,227,0.3);
-    border-radius:2px;padding:11px 12px;color:var(--ivory);
-    font-family:'Manrope',sans-serif;font-size:16px;
-  }
-  .field input::placeholder,.field textarea::placeholder{color:rgba(243,237,227,0.45);}
-  .field textarea{resize:vertical;min-height:80px;}
-  .radio-row{display:flex;gap:14px;flex-wrap:wrap;}
-  .radio-row label{
-    display:flex;align-items:center;gap:8px;font-size:.92rem;cursor:pointer;
-  }
-  .rsvp-submit{margin-top:6px;align-self:start;width:100%;text-align:center;}
-  .rsvp-note{
-    margin-top:16px;font-size:.86rem;color:var(--gold-soft);display:none;
-  }
-  .rsvp-note.show{display:block;}
 
-  /* ---------- Phone breakpoints ---------- */
-  @media (max-width:560px){
-    .section{padding:clamp(48px,10vw,64px) 0;}
-  }
+.conteiner{
 
-  @media (max-width:420px){
-    .wrap{padding-left:16px;padding-right:16px;}
-    .cta-row{flex-direction:column;align-items:stretch;}
-    .cta-row .btn{width:100%;text-align:center;}
-    .countdown{gap:8px;}
-    .countdown div{flex-basis:60px;min-width:58px;padding:10px 4px;}
-    .date-card{gap:20px;}
-    .honorees{grid-template-columns:repeat(2,1fr);}
-  }
+  background-size: 100%;
+overflow: hide;
+width: 100%;
+   height: 50%;
 
-  @media (max-width:340px){
-    .honorees{grid-template-columns:1fr;}
-    .countdown div{flex-basis:70px;}
-  }
+}
+.countdown-container {
+    margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 0.7rem;
+      font-weight: 200;
+      line-height: 1.0;
+      -webkit-text-size-adjust: 80%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      display: flex;
+      justify-content: center;
+     background-color: none;
+}
 
-  /* ---------- Phone-only gate ---------- */
-  .desktop-gate{
-    display:none;
-    min-height:100vh;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:40px 24px;
-    background:
-      radial-gradient(120% 90% at 50% -10%, rgba(188,154,87,0.18), transparent 60%),
-      linear-gradient(180deg, var(--emerald-deep), var(--emerald) 65%);
-    color:var(--ivory);
-  }
-  .desktop-gate svg{margin-bottom:26px;}
-  .desktop-gate h2{
-    color:var(--ivory);
-    font-size:clamp(1.6rem,3vw,2.1rem);
-    margin-bottom:14px;
-  }
-  .desktop-gate p{
-    max-width:360px;color:rgba(243,237,227,0.82);
-    font-size:.98rem;margin:0;
-  }
-  .desktop-gate .hint{
-    margin-top:26px;font-size:.8rem;letter-spacing:.03em;color:var(--gold-soft);
-  }
 
-  @media (min-width:701px){
-    #page-content{display:none;}
-    .desktop-gate{display:flex;}
-  }
+.countdown-item {
+      position: relative;
+      min-width: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-bottom: 10px;
+}
+
+    .countdown:not(:last-child)::after {
+      content: ':';
+      position: absolute;
+      right: -15px;
+
+    }
+
+
+.countdown-item span {
+       display: block;
+    font-size: 35px;
+    margin-bottom: 1px;
+    color: #3F3F3F;
+    border-radius: 5px;
+    padding: 5px;
+    animation: pulse 1s ease infinite alternate;
+}
+
+
+
+
+
+
+
+
+      .form-inner {
+   position: relative;
+}
+
+}
+.form-inner label {
+   display: block;
+   padding-left: 15px;
+   font-family: 'Roboto', sans-serif;
+   color: rgba(255, 255, 255, .6);
+   text-transform: uppercase;
+   font-size: 15px;
+padding: 0 15px;
+   margin: 10px 0 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+
+  transition: transform 0.3s ease;
+}
+
+/* Стили для кнопки с эффектом при нажатии */
+.btn {
+  transform: scale(1.1); /* Увеличиваем кнопку при активации */
+}
+
+
+
+.form-inner textarea {
+   width: 80%;
+   text-align: center;
+   margin-top: 5px;
+ 
+   border-radius: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #F4F4F4;
+    border-color: #1d3f57  0.5px;
+    letter-spacing: 0.11em;
+ height: 30px;
+   font-family: 'Roboto', sans-serif;
+  
+}
+
+.form-inner input[type="submit"] {
+    background: linear-gradient(to top left, #4A6C6B 0%, #4A6C6B 100%);
+       width: 80%;
+height: 30PX;
+text-align: center;
+    border: 0;
+    border-bottom: 2px  #aaa;
+       border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #EFEFEF  ;
+    letter-spacing: 0.11em;
+   font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
+   margin: 10px 0 1px;
+
+}
+.radio-group{
+  text-align: left;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+
+
+body{
+background-color: #F4F4F4;
+}
 </style>
+
+
+
+
+ <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+
+  </style>
+
+
+
+
+
+
+
+
+
+ <style>
+        /* Стили для модального окна */
+        .modal {
+            display: block; /* Модальное окно отображается сразу */
+            position: fixed;
+            z-index: 9999; /* Модальное окно поверх всех элементов */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Затемнённый фон */
+        }
+        .modal-content {
+            background-color: #F4F4F4;
+            margin: 30% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+        .kk{
+          width: 100%;
+          height: 100%;
+     }
+          button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #F4F4F4;
+            border-radius: 5px;
+            border-color: #000000;
+        }
+        /* Отключение скроллинга страницы */
+        body.modal-open {
+            overflow: hidden;
+        }
+    </style>
+
+
 </head>
 <body>
 
-<div class="desktop-gate">
-  <svg width="44" height="72" viewBox="0 0 44 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="1.5" y="1.5" width="41" height="69" rx="7" stroke="#BC9A57" stroke-width="1.4"/>
-    <line x1="1.5" y1="59" x2="42.5" y2="59" stroke="#BC9A57" stroke-width="1.4"/>
-    <circle cx="22" cy="65" r="2.6" fill="#BC9A57"/>
-  </svg>
-  <h2>Шақыруды телефоннан қараңыз</h2>
-  <p>Бұл бет телефон экранына арналып жасалды. Толық көру үшін сілтемені смартфоныңыздан ашыңыз.</p>
-  <div class="hint">80 жас мерейтой &amp; Ұлы той</div>
+
+
+<center>
+<div class="fade-in" id="content">
+<img src="photo1.jpg" style="width: 100%; " loading="eager">
+</div></center>
+
+
+
+<center>
+<div class="element-animation"> 
+<img src="photo2.jpg" style="width: 100%; margin-top: 20px;">
+</div></center>
+
+
+
+
+<center>
+<div class="element-animation"> 
+<img src="photo3.jpg" style="width: 100%; margin-top: 30px;">
+</div></center>
+
+
+<center>
+<div class="countdown-container" style="margin-top:50px;">
+    <div class="countdown-item" style="margin-bottom: 30px;">
+        <span id="days"></span>
+        <span style="font-size: 13px;text-align: center;">күн</span>
+    </div><h2 style="margin-top:3px; size: 30px;">:</h2>
+    <div class="countdown-item">
+        <span id="hours"></span>
+        <span style="font-size: 13px;text-align: center;">сағат</span>
+    </div><h2 style="margin-top:3px; size: 30px;">:</h2>
+    <div class="countdown-item">
+        <span id="minutes"></span>
+        <span style="font-size: 13px;text-align: center;text-align: center;">минут</span>
+    </div><h2 style="margin-top:3px; size: 30px;">:</h2>
+    <div class="countdown-item">
+        <span id="seconds"></span>
+        <span style="font-size: 13px;text-align: center;">секунд</span>
+    </div>
 </div>
 
-<div id="page-content">
+</center>
 
-<section class="hero" id="top">
-  <div class="wrap">
-    <svg class="ornament" viewBox="0 0 56 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M2 7h18M36 7h18" stroke="#D6BD91" stroke-width="1"/>
-      <circle cx="28" cy="7" r="4.5" stroke="#D6BD91" stroke-width="1"/>
-      <circle cx="28" cy="7" r="1.4" fill="#D6BD91"/>
-    </svg>
-    <div class="hero-eyebrow">Қос қуанышқа шақыру</div>
-    <h1>80 жас мерейтой<br>&amp; Ұлы той</h1>
-    <p class="lead">
-      Құрметті ағайын-туыс, бауырлар, құда-жекжат, дос-жарандар, әріптестер мен көршілер —
-      ақ дастарханымыздың қадірлі қонағы болуыңызды сұраймыз.
-    </p>
 
-    <div class="countdown" id="countdown">
-      <div><span class="num" id="cd-days">00</span><span class="label">күн</span></div>
-      <div><span class="num" id="cd-hours">00</span><span class="label">сағат</span></div>
-      <div><span class="num" id="cd-min">00</span><span class="label">минут</span></div>
-      <div><span class="num" id="cd-sec">00</span><span class="label">секунд</span></div>
-    </div>
 
-    <div class="cta-row">
-      <a class="btn btn-gold" href="#rsvp">Қатысуды растау</a>
-      <a class="btn btn-outline" href="#location">Өтетін орны</a>
-    </div>
-  </div>
-</section>
+<center>
+<div class="element-animation">
+<img src="photo4.jpg" style="width: 100%; margin-top: 40px;">
+</div></center>
 
-<section class="photo" id="photo">
-  <div class="wrap">
-    <div class="photo-frame">
-      <img src="photo1.jpg" alt="Бектай ата, Дәулетбек, Нұрасыл, Ерасыл" loading="lazy">
-    </div>
-    <p class="photo-caption">
-      Бектай ата, Дәулетбек, Нұрасыл, Ерасыл
-      <span>80 жас мерейтой &amp; Ұлы той</span>
-    </p>
-  </div>
-</section>
 
-<section class="section about" id="about">
-  <div class="wrap">
-    <div class="kicker">Қонақтарға үндеу</div>
-    <h2>Қуанышымызды бөлісуге шақырамыз</h2>
-    <p>
-      Асқар тау әкеміз Бектайдың 80 жасқа толу мерейтойы мен ұлдарымыз Дәулетбектің,
-      Нұрасылдың және Ерасылдың ұлы тойына арналған қос қуанышымызға
-      сіздерді куә болуға шақырамыз.
-    </p>
+<center>
+<div class="element-animation"><a href="https://2gis.kz/shymkent/geo/70000001113194708">
+<img src="photo5.jpg" style="width: 100%; margin-top: 40px;">
+</a>
+</div></center>
 
-    <div class="honorees">
-      <div class="honoree-card">
-        <div class="role">Мерейтой иесі</div>
-        <div class="name">Бектай ата — 80 жас</div>
-      </div>
-      <div class="honoree-card">
-        <div class="role">Ұлы той</div>
-        <div class="name">Дәулетбек</div>
-      </div>
-      <div class="honoree-card">
-        <div class="role">Ұлы той</div>
-        <div class="name">Нұрасыл</div>
-      </div>
-      <div class="honoree-card">
-        <div class="role">Ұлы той</div>
-        <div class="name">Ерасыл</div>
-      </div>
-    </div>
 
-    <div class="date-card">
-      <div class="date-info">
-        <div class="kicker">Той күні</div>
-        <div class="big-date">30 қазан, 2026</div>
-        <div class="time">Басталу уақыты: 18:00</div>
-        <div style="margin-top:18px;">
-          <a class="btn btn-gold" id="add-to-calendar" href="#" target="_blank" rel="noopener">Күнтізбеге қосу</a>
-        </div>
-      </div>
-      <div class="cal">
-        <div class="cal-head">Қазан 2026</div>
-        <div class="cal-grid" id="cal-grid"><!-- filled by JS --></div>
-      </div>
-    </div>
-  </div>
-</section>
+<center>
+<div class="element-animation"> 
+<img src="photo6.jpg" style="width: 100%;margin-top: 50px; margin-bottom: 25px;"  >
 
-<section class="section location" id="location">
-  <div class="wrap">
-    <div class="kicker">Өтетін орны</div>
-    <h2>Шымкент қаласы</h2>
+</div></center>
 
-    <div class="location-card">
-      <div class="venue-name">Altyn Ballroom мейрамханасы</div>
-      <div class="venue-meta">Жібек жолы көшесі, 130/1 · @altyn_ballroom</div>
 
-      <div class="map-frame">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.6456826540046!2d69.65487249876226!3d42.33603501283271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a91de48c0d9933%3A0x1d32c10494ef957e!2z0JbQuNCx0LXQuiDQltC-0LvRiyAxMzAsINCo0YvQvNC60LXQvdGC!5e0!3m2!1sru!2skz!4v1789494112175!5m2!1sru!2skz"
-          loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-          title="Altyn Ballroom картасы" allowfullscreen></iframe>
-      </div>
-
-      <div class="loc-links">
-        <a href="https://goo.gl/maps/search/?api=1&query=Altyn+Ballroom+Шымкент+Жібек+жолы+130/1" target="_blank" rel="noopener">Картадан ашу</a>
-        <a href="https://www.instagram.com/altyn_ballroom/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="rsvp">
-  <div class="wrap">
-    <div class="rsvp-box">
-      <div class="kicker">Қатысуды растау — RSVP</div>
-      <h2>Қатысуыңызды растаңыз</h2>
-      <p class="hosts">
-        Той иелері: Нұрқазы — Айгүл.<br>
-        Жауабыңыз қонақ санын алдын ала жоспарлауға көмектеседі.
-      </p>
-
-      <form class="rsvp" id="rsvp-form">
-        <div class="field">
-          <label for="name">Аты-жөніңіз *</label>
-          <input id="name" name="name" type="text" placeholder="Аты-жөніңізді жазыңыз" required>
-        </div>
-        <div class="field">
-          <label for="phone">Телефон нөміріңіз</label>
-          <input id="phone" name="phone" type="tel" placeholder="+7 ___ ___ __ __">
-        </div>
-        <div class="field">
-          <label>Тойға келесіз бе? *</label>
-          <div class="radio-row">
-            <label><input type="radio" name="attending" value="yes" required> Келемін</label>
-            <label><input type="radio" name="attending" value="no"> Келе алмаймын</label>
-          </div>
-        </div>
-        <div class="field">
-          <label for="note">Тілек немесе ескерту</label>
-          <textarea id="note" name="note" placeholder="Тілегіңізді осы жерге жазыңыз"></textarea>
-        </div>
-        <button class="btn btn-gold rsvp-submit" type="submit">Жауапты жіберу</button>
-        <div class="rsvp-note" id="rsvp-note">Рахмет! Жауабыңыз қабылданды.</div>
-      </form>
-    </div>
-  </div>
-</section>
-
+<center style="margin-top: 0px;">
+<form class="transparent"method="post" id="form">
+<div class="form-inner">
+  
+ <div class="radio-group" required>
+                    <input type="radio" id="question1_yes" name="name" value="Иә барамын" required>
+                    <label for="question1_yes" >Иә барамын</label><br>
+                     <input type="radio" id="question1_yes" name="name" value="Жұбайыммен барамын" required>
+                    <label for="question1_yes" >Жұбайыммен барамын</label><br>
+                    <input type="radio" id="question1_no" name="name" value="Бара алмаймын" required>
+                    <label for="question1_no">Бара алмаймын</label>
+                </div>
+    <textarea required
+          name="message"
+          maxlength="100"
+          id="message"
+          cols="30"
+          rows="4"
+          placeholder="Есіміңізді жазыңыз"
+         
+        ></textarea>
+<input  type="submit" value="Жіберу" style="color:white;" class="btn">
 </div>
+</form></center>
+
+
+
+
+
+
+
+<center>
+<div class="element-animation"> 
+<img src="photo7.jpg" style="width: 100%;margin-top: 50px; "  >
+
+</div></center>
+
+
+
+
+<!-- Модал -->
+<div id="musicModal" class="modal">
+    <div class="modal-content">
+        <img src="photo.jpg" class="kk">
+        <button id="playMusic" style="color: black;">Шақыртуды ашу</button>
+    </div>
+</div>
+
+<!-- Аудио -->
+<audio id="backgroundMusic" loop playsinline preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 
 <script>
-  // ---------- Event date (Almaty/Shymkent, UTC+5) ----------
-  const EVENT_DATE = new Date("2026-10-30T18:00:00+05:00");
+  // ===== Параметрлер =====
+  const SPEED_PX_PER_SEC = 100;      // жылдамдық (px/сек)
+  const RESTART_DELAY_MS = 3000;    // пайдаланушы әрекетінен кейін қайта қосу кідірісі
 
-  // ---------- Countdown ----------
-  function updateCountdown(){
-    const now = new Date();
-    let diff = EVENT_DATE - now;
-    if(diff < 0) diff = 0;
-    const d = Math.floor(diff / (1000*60*60*24));
-    const h = Math.floor((diff / (1000*60*60)) % 24);
-    const m = Math.floor((diff / (1000*60)) % 60);
-    const s = Math.floor((diff / 1000) % 60);
-    document.getElementById('cd-days').textContent  = String(d).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
-    document.getElementById('cd-min').textContent   = String(m).padStart(2,'0');
-    document.getElementById('cd-sec').textContent   = String(s).padStart(2,'0');
+  // ===== Элементтер =====
+  const modal = document.getElementById("musicModal");
+  const playButton = document.getElementById("playMusic");
+  const audio = document.getElementById("backgroundMusic");
+
+  document.documentElement.style.scrollBehavior = 'auto';
+  document.body.style.scrollBehavior = 'auto';
+  document.body.style.overflow = 'hidden'; // модал ашық кезде скролды бұғаттау
+
+  // ===== Күй =====
+  let isRunning = false;    
+  let resumeTimer = null;   
+  let rafId = null;         
+  let lastTs = 0;           
+  let accum = 0;            
+
+  // Қауіпсіз скрол функциясы
+  function safeScrollBy(step) {
+    const before = window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop || 0;
+
+    window.scrollBy(0, step);
+
+    let after = window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop || 0;
+
+    if (after === before) {
+      document.documentElement.scrollTop = before + step;
+      after = window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop || 0;
+
+      if (after === before) {
+        document.body.scrollTop = before + step;
+      }
+    }
   }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
 
-  // ---------- Calendar grid (October 2026) ----------
-  (function buildCalendar(){
-    const grid = document.getElementById('cal-grid');
-    const dowLabels = ['Дс','Сс','Ср','Бс','Жм','Сн','Жк'];
-    dowLabels.forEach(l=>{
-      const el = document.createElement('span');
-      el.className = 'dow';
-      el.textContent = l;
-      grid.appendChild(el);
-    });
+  function atBottom() {
+    const maxScroll =
+      Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) - window.innerHeight;
+    const y = window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop || 0;
+    return y >= maxScroll - 1;
+  }
 
-    const year = 2026, month = 9; // October = index 9
-    const firstDay = new Date(year, month, 1);
-    let startOffset = firstDay.getDay() - 1; // make Monday = 0
-    if(startOffset < 0) startOffset = 6;
-    const daysInMonth = new Date(year, month+1, 0).getDate();
+  // Негізгі цикл
+  function loop(ts) {
+    rafId = requestAnimationFrame(loop);
+    if (!isRunning) { lastTs = ts; return; }
+    if (!lastTs) lastTs = ts;
 
-    for(let i=0; i<startOffset; i++){
-      const el = document.createElement('span');
-      el.className = 'blank';
-      grid.appendChild(el);
+    const dt = ts - lastTs;
+    lastTs = ts;
+
+    accum += (SPEED_PX_PER_SEC * dt) / 1000;
+
+    const step = Math.floor(accum);
+    if (step >= 1) {
+      accum -= step;
+
+      if (atBottom()) {
+        // === Соңына жеткенде тоқтату ===
+        stopAuto();
+        cancelAnimationFrame(rafId);
+        rafId = null;
+        return;
+      }
+
+      safeScrollBy(step);
     }
-    for(let day=1; day<=daysInMonth; day++){
-      const el = document.createElement('span');
-      el.textContent = day;
-      if(day === 30) el.className = 'active';
-      grid.appendChild(el);
-    }
-  })();
+  }
 
-  // ---------- Add to Google Calendar ----------
-  (function setCalendarLink(){
-    const start = "20261030T130000Z"; // 18:00 Almaty = 13:00 UTC
-    const end   = "20261030T180000Z"; // 23:00 Almaty = 18:00 UTC
-    const text = encodeURIComponent("80 жас мерейтой & Ұлы той");
-    const details = encodeURIComponent("Асқар тау әкеміздің 80 жас мерейтойы мен ұлдарымыздың ұлы тойы.");
-    const location = encodeURIComponent("Шымкент, Altyn Ballroom, Жібек жолы 130/1");
-    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${start}/${end}&details=${details}&location=${location}`;
-    document.getElementById('add-to-calendar').href = url;
-  })();
+  // Авто-скролды басқару
+  function startAuto() { if (!isRunning) { isRunning = true; } }
+  function stopAuto()  { isRunning = false; }
 
-  // ---------- RSVP form → Google Sheets ----------
-  // Вставьте сюда URL вашего развёрнутого Apps Script (заканчивается на /exec)
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyo1DjIE7nHle0d08LESGxH4qePRYLj9jHMtlje3dxBrM1QcRoCwl314JBigyf0AikN/exec";
+  function restartAfterDelay() {
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => startAuto(), RESTART_DELAY_MS);
+  }
 
-  document.getElementById('rsvp-form').addEventListener('submit', function(e){
-    e.preventDefault();
-    const form = this;
-    const note = document.getElementById('rsvp-note');
-    const submitBtn = form.querySelector('.rsvp-submit');
-    const originalLabel = submitBtn.textContent;
+  // Пайдаланушы әрекеттерін тыңдау
+  const onInteract = () => { stopAuto(); restartAfterDelay(); };
+  window.addEventListener('touchstart', onInteract, { passive: true });
+  window.addEventListener('touchmove',  onInteract, { passive: true });
+  window.addEventListener('wheel',      onInteract, { passive: true });
+  window.addEventListener('mousedown',  onInteract, { passive: true });
+  window.addEventListener('keydown',    onInteract, { passive: true });
 
-    if (GOOGLE_SCRIPT_URL.indexOf('ВСТАВЬТЕ') !== -1) {
-      note.textContent = 'Форма ещё не подключена к Google Таблице — вставьте URL Apps Script в коде.';
-      note.classList.add('show');
-      return;
-    }
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { stopAuto(); }
+    else { restartAfterDelay(); }
+  });
 
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Жіберілуде...';
+  // Модалды жабу
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
 
-    const formData = new FormData(form);
-
-    fetch(GOOGLE_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors', // Apps Script веб-приложение не отдаёт CORS-заголовки
-      body: formData
-    })
-      .then(function(){
-        note.textContent = 'Рахмет! Жауабыңыз қабылданды.';
-        note.classList.add('show');
-        form.reset();
-      })
-      .catch(function(){
-        note.textContent = 'Қате шықты. Қайта көріңіз немесе бізге хабарласыңыз.';
-        note.classList.add('show');
-      })
-      .finally(function(){
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalLabel;
-      });
+  playButton.addEventListener('click', () => {
+    audio.play().catch(()=>{});
+    closeModal();
+    if (!rafId) rafId = requestAnimationFrame(loop);
+    restartAfterDelay();
   });
 </script>
 
+
+
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      var elements = document.querySelectorAll(".fade-in");
+      elements.forEach(function(element) {
+        observer.observe(element);
+      });
+    });
+  </script>
+
+
+<script>
+    
+
+    const URL_APP = "https://script.google.com/macros/s/AKfycbzlLJAn-Fi-aeG8iFk4LWvmlSP9ZP8N6kw1gg0-wl2nRdIcaXbGPLGvgcEG1ltF-G5q/exec";
+
+const form = document.querySelector("#form");
+
+form.action = URL_APP;
+
+function isFilled(details) {
+  const {name, message } = details;
+  if (!name || !message) return false;
+  return true;
+}
+
+form.addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+
+  const name = document.querySelector("[name=name]:checked");
+  const message = document.querySelector("[name=message]");
+
+  let details = {
+    name: name ? name.value : '',
+    message: message.value.trim(),
+  };
+
+
+  let formBody = [];
+  for (let property in details) {
+    let encodedKey = encodeURIComponent(property);
+    let encodedValue = encodeURIComponent(details[property]);
+    formBody.push(encodedKey + "=" + encodedValue);
+  }
+  formBody = formBody.join("&");
+
+ name.value = '';
+  message.value = '';
+  alert('Жауабыңызға рахмет!');
+
+  // Деректерді серверге жіберу
+  fetch(URL_APP, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    },
+    mode: "no-cors",
+    body: formBody,
+  }).catch((err) => {
+    console.error('Error:', err);
+    alert("Ошибка!");
+  }).finally(() => {
+    submitButton.disabled = false; // Жіберу батырмасын қайта қосу
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+     function onEntry(entry) { 
+      entry.forEach(change => { 
+        if (change.isIntersecting) { 
+         change.target.classList.add('element-show'); 
+         
+        } 
+      }); 
+    } 
+        let options = { 
+      threshold: [0.5] }; 
+    let observer = new IntersectionObserver(onEntry, options); 
+    let elements = document.querySelectorAll('.element-animation'); 
+     
+    for (let elm of elements) { 
+      observer.observe(elm); 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<script async>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    function updateCountdown() {
+        const endDate = new Date("October 30, 2026 19:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (distance < 0) {
+            clearInterval(timerInterval);
+            document.getElementById("days").innerText = "00";
+            document.getElementById("hours").innerText = "00";
+            document.getElementById("minutes").innerText = "00";
+            document.getElementById("seconds").innerText = "00";
+        }
+    }
+
+    const timerInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+});
+
+
+
+</script>
+
+
+
+
+</script>
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2?family= Piazzolla :wght@100 & display=swap" rel="stylesheet">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" async></script>
 </body>
 </html>
